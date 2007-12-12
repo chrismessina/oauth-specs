@@ -1034,7 +1034,7 @@
   &lt;?xml version="1.0" encoding="UTF-8"?&gt;
   &lt;XRDS xmlns="xri://$xrds"&gt;
     &lt;XRD xmlns:oauth="http://oauth.net/discovery/1.0" xmlns="xri://$xrd*($v*2.0)"&gt;
-      &lt;Query type="user"&gt;http://api.example.com/&lt;/Query&gt;
+      &lt;Query&gt;http://api.example.com/&lt;/Query&gt;
       &lt;Expires&gt;2007-12-31T23:59:59Z&lt;/Expires&gt;
       &lt;oauth:RequestParameter source="http://oauth.net/core/1.0"&gt;
         &lt;oauth:Method&gt;AUTH-HEADER&lt;/oauth:Method&gt;
