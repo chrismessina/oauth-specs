@@ -388,7 +388,7 @@
                 earlier of the two.
               </t>
               <t hangText="&lt;Service&gt;">
-                1 or more per Realm Definition as defined in
+                0 or more per Realm Definition as defined in
                 <xref target="service_element" />.
               </t>
               <t hangText="&lt;oauth:Realm&gt;">
