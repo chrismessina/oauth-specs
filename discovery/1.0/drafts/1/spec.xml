@@ -1036,12 +1036,12 @@
     &lt;XRD xmlns:oauth="http://oauth.net/discovery/1.0" xmlns="xri://$xrd*($v*2.0)"&gt;
       &lt;Query&gt;http://api.example.com/&lt;/Query&gt;
       &lt;Expires&gt;2007-12-31T23:59:59Z&lt;/Expires&gt;
-      &lt;oauth:RequestParameter source="http://oauth.net/core/1.0"&gt;
+      &lt;oauth:RequestParameterMethods&gt;
         &lt;oauth:Method&gt;AUTH-HEADER&lt;/oauth:Method&gt;
         &lt;oauth:Method&gt;POST-BODY&lt;/oauth:Method&gt;
         &lt;oauth:Method&gt;URL-QUERY&lt;/oauth:Method&gt;
-      &lt;/oauth:RequestParameter&gt;
-      &lt;oauth:RequestSignature source="http://oauth.net/core/1.0"&gt;
+      &lt;/oauth:RequestParameterMethods&gt;
+      &lt;oauth:RequestSignature&gt;
         &lt;oauth:Method&gt;HMAC-SHA1&lt;/oauth:Method&gt;
       &lt;/oauth:RequestSignature&gt;
       &lt;Service&gt;
@@ -1055,9 +1055,9 @@
       &lt;Service&gt;
         &lt;Type&gt;http://oauth.net/core/1.0/endpoint/authorize&lt;/Type&gt;
         &lt;URI&gt;https://api.example.com/session/login&lt;/URI&gt;
-        &lt;oauth:RequestParameter append="override"&gt;
+        &lt;oauth:RequestParameterMethods append="override"&gt;
           &lt;oauth:Method&gt;URL-QUERY&lt;/oauth:Method&gt;
-        &lt;/oauth:RequestParameter&gt;
+        &lt;/oauth:RequestParameterMethods&gt;
       &lt;/Service&gt;
       &lt;Service&gt;
         &lt;Type&gt;http://oauth.net/core/1.0/endpoint/access&lt;/Type&gt;
