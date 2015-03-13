@@ -1,0 +1,1 @@
+Depot for sharing and developing OAuth specifications for core services and extensions.
